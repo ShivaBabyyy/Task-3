@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSLR Cameras - Camera Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <style>
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: #555;
+        }
+
+        .camera-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-menu a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #575757;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>DSLR Cameras</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="menu-button"><a href="#">Category</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="dslr.html">DSLR</a></li>
+                            <li><a href="mirrorless.html">Mirrorless</a></li>
+                            <li><a href="compact.html">Compact</a></li>
+                            <li><a href="bridge.html">Bridge</a></li>
+                            <li><a href="action.html">Action</a></li>
+                            <li><a href="360.html">360-Degree</a></li>
+                            <li><a href="medium.html">Medium Format</a></li>
+                            <li><a href="instant.html">Instant</a></li>
+                            <li><a href="smartphone.html">Smartphone</a></li>
+                            <li><a href="film.html">Film</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="dslr">
+            <h2>Digital Single-Lens Reflex (DSLR) Cameras</h2>
+            <img src="dslr.jpg" alt="DSLR Camera" class="camera-image">
+            <p>DSLR cameras are renowned for their versatility, high image quality, and advanced features that cater to both amateur and professional photographers. They use a mirror mechanism to reflect light from the lens up to an optical viewfinder, allowing photographers to see exactly what the lens sees.</p>
+            <h3>Features of DSLR Cameras</h3>
+            <p>Some key features of DSLR cameras include:</p>
+            <ul>
+                <li>Interchangeable lenses for various photography needs</li>
+                <li>Large sensors for better image quality and low light performance</li>
+                <li>Manual controls for aperture, shutter speed, and ISO settings</li>
+                <li>Optical viewfinder for real-time scene composition</li>
+                <li>Robust build quality and ergonomic design</li>
+            </ul>
+            <h3>Popular DSLR Brands and Models</h3>
+            <p>Some popular brands and models in the DSLR market include:</p>
+            <ul>
+                <li>Canon EOS series (e.g., Canon EOS 5D Mark IV, Canon EOS 90D)</li>
+                <li>Nikon D series (e.g., Nikon D850, Nikon D7500)</li>
+                <li>Sony Alpha series (e.g., Sony Alpha a99 II)</li>
+            </ul>
+            <p>DSLR cameras remain a favorite among photographers for their reliability, extensive lens options, and overall performance.</p>
+        </section>
+        <section id="dynamic-content">
+            <h2>Dynamic Content</h2>
+            <button id="loadButton">Load More Info</button>
+            <div id="content"></div>
+        </section>
+        <a href="catagories.html" class="back-button">Back to Categories</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shiva's Camera Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>

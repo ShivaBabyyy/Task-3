@@ -1,0 +1,213 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=American+Typewriter:wght@400;700&family=Georgia:wght@400;700&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Georgia', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: url(/scene.jpg) no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+}
+
+/* Header styling */
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    border-bottom: 2px solid #444;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family: 'American Typewriter', serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    font-family: 'American Typewriter', serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.3s, cursor 0.3s;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    cursor: url('https://example.com/large-cursor.png'), auto; /* Use a custom cursor URL */
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #575757;
+}
+
+.show {
+    display: block;
+}
+
+/* Main content styling */
+main {
+    padding: 20px 0;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+}
+
+/* Category links styling */
+section#about nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section#about nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Descriptive text styling */
+section p {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #dddddd;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ffffff;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #0000005e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, cursor 0.3s;
+}
+
+form button:hover {
+    background: #aacc3c;
+    transform: scale(1.05);
+    cursor: url('https://example.com/alternate-cursor.png'), auto; /* Change the cursor icon */
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styles for fluid buttons */
+button, .button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, cursor 0.3s;
+    border: none;
+    border-radius: 50px;
+}
+
+button:hover, .button:hover {
+    background: #fffb00;
+    transform: scale(1.05);
+    cursor: url('https://example.com/alternate-cursor.png'), auto; /* Change the cursor icon */
+}
